@@ -121,8 +121,11 @@ nav {
     padding-left: 20px;
     margin-bottom: 20px;
 }
-.designation{
-    
+.speaker-info span{
+    color: #1d4ed8;
+}
+.speaker-info h3{
+    padding: 12px 0px;
 }
 
 /* Skill Badge */
