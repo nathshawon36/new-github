@@ -2,17 +2,243 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 /* Google Fonts */
 
-/* font-family: "Inter", sans-serif; */
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Inter", sans-serif; 
 }
-/* img{
-    width: 100%;
-} */
 .container{
-    max-width: 1200px;
-    margin: auto;
+    max-width: 1100px;
+    margin: auto; 
 }
+img{
+    max-width: 100%;
+}
+header{
+    background-color: antiquewhite;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+}
+.menu ul{
+    display: flex;
+    gap: 10px;
+}
+.menu ul li{
+    list-style: none;
+    font-size: 15px;
+}
+.menu ul li a{
+    text-decoration: none;
+}
+.button li{
+    list-style: none;
+}
+.btn{
+    background-color: blue;
+    padding: 8px 4px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 12px;
+    border: none;
+}
+/* Hero section style */
+.hero-parent-root{
+    background-image: url(./images/hero.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;.
+    align-items: center;
+}
+.hero-text{
+    max-width: 750px;
+    line-height: 24px;
+    font-size: 20px;
+    color: white;
+    font-weight: 100;
+    letter-spacing: 0px;
+}
+.hero-para{
+    padding: 30px 0;
+}
+/* speakers style */
+.speakers{
+    display:grid;
+    margin-top: 30px;
+    grid-template-columns:repeat(2,1fr);
+    gap:30px;
+}
+
+.speaker-card{
+    text-align:left;
+    border-radius: 12px;
+    overflow: hidden;
+    border:1px solid #e5e7eb;
+}
+.speaker-card img{
+    margin-bottom:20px;
+}
+.speaker-info{
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+.designation{
+    
+}
+
+/* Skill Badge */
+.skill{
+    
+}
+
+/* register price */
+
+.pricing{
+    padding:80px 0;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-title h2{
+    font-size:42px;
+    font-weight:700;
+    margin-bottom:10px;
+}
+
+.section-title p{
+    color:#777;
+    font-size:15px;
+}
+
+.pricing-wrapper{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.price-card{
+    background:#fff;
+    border:1px solid #e5e7eb;
+    border-radius:14px;
+    padding:35px;
+    transition:.35s;
+}
+
+.price-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 18px 40px rgba(0,0,0,.08);
+}
+
+.price-card.active{
+    background:#0f172a;
+    color:#fff;
+    transform:translateY(-15px);
+}
+
+.plan{
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:2px;
+    color:#888;
+}
+
+.active .plan{
+    color:#8ab4ff;
+}
+
+.price-card h3{
+    font-size:48px;
+    margin:12px 0 5px;
+}
+
+.price-card small{
+    color:#888;
+}
+
+.active small{
+    color:#bfc9d8;
+}
+
+.price-card hr{
+    margin:28px 0;
+    border:none;
+    border-top:1px solid #ececec;
+}
+
+.active hr{
+    border-color:#273449;
+}
+
+.price-card ul{
+    list-style:none;
+    margin-bottom:35px;
+}
+
+.price-card ul li{
+    position:relative;
+    padding-left:22px;
+    margin-bottom:14px;
+    color:#666;
+    font-size:15px;
+}
+
+.active ul li{
+    color:#d8e1f0;
+}
+
+.price-card ul li::before{
+    content:"•";
+    position:absolute;
+    left:0;
+    color:#2563eb;
+}
+
+.btn{
+    display:block;
+    text-align:center;
+    padding:14px;
+    border-radius:8px;
+    font-weight:600;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.btn-primary{
+    background: red;
+    color:#fff;
+}
+
+.btn-primary:hover{
+    background:#1d4ed8;
+}
+
+.btn-outline{
+    border:1px solid #2563eb;
+    color:#2563eb;
+}
+
+.btn-outline:hover{
+    background:#2563eb;
+    color:#fff;
+}
+
+.btn-outline-dark{
+    border:1px solid white;
+    color:black;
+}
+
+.btn-outline-dark:hover{
+    background:#111827;
+    color:#fff;
+} 
