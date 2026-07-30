@@ -16,7 +16,10 @@ img{
     max-width: 100%;
 }
 header{
-    background-color: antiquewhite;
+    background-color: black;
+}
+.logo h2{
+    color: white;
 }
 nav {
     display: flex;
@@ -34,6 +37,7 @@ nav {
 }
 .menu ul li a{
     text-decoration: none;
+    color: white;
 }
 .button li{
     list-style: none;
@@ -52,22 +56,49 @@ nav {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    height: 800px;
+    background-size: cover;
+    height: 500px;
+}
+.hero-parent{
+    height: 100%;
     display: flex;
     flex-direction: column;
-    text-align: center;.
+    justify-content: center;
     align-items: center;
+    text-align: center;
+    gap: 25px;
 }
 .hero-text{
-    max-width: 750px;
+    max-width: 584px;
     line-height: 24px;
     font-size: 20px;
     color: white;
     font-weight: 100;
     letter-spacing: 0px;
 }
-.hero-para{
-    padding: 30px 0;
+.hero-heading h2{
+    font-size: 42px;
+    font-weight: 800;
+    line-height: 1.2;
+    color: #fff;
+}
+.hero-para p{
+    color: #d1d5db;
+    font-size: 17px;
+    line-height: 1.8;
+}
+.btn{
+    display:inline-block;
+    padding:16px 40px;
+    background:#2563eb;
+    color:#fff;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:600;
+}
+
+.btn:hover{
+    background:#1d4ed8;
 }
 /* speakers style */
 .speakers{
@@ -215,7 +246,7 @@ nav {
 }
 
 .btn-primary{
-    background: red;
+    background:#2563eb;
     color:#fff;
 }
 
@@ -242,3 +273,141 @@ nav {
     background:#111827;
     color:#fff;
 } 
+
+/* faq style section */
+.faq{
+    background:#f8fafc;
+}
+.section-title h2{
+    font-size: 42px;
+    padding-top: 20px;
+}
+.faq-container{
+    max-width:600px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.faq-container details{
+    background:#fff;
+    border:1px solid #e5e7eb;
+    border-radius:10px;
+    margin-bottom:18px;
+    padding:20px 25px;
+    transition:.3s;
+}
+
+.faq-container details:hover{
+    border-color:#2563eb;
+}
+
+.faq-container summary{
+    cursor:pointer;
+    font-size:18px;
+    font-weight:600;
+    list-style:none;
+}
+
+.faq-container summary::after{
+    content:"+";
+    float:right;
+    font-size:22px;
+    color:#2563eb;
+}
+.faq-container p{
+    margin:18px 0px;
+    line-height:1.7;
+    color:#64748b;
+}
+/* newsletter section */
+
+.newsletter{
+    padding:90px 0;
+}
+
+.newsletter-box{
+    max-width:850px;
+    margin:auto;
+    text-align:center;
+    background:#0f172a;
+    color:#fff;
+    padding:60px;
+    border-radius:18px;
+}
+
+.tag{
+    display:inline-block;
+    background:#2563eb;
+    padding:8px 18px;
+    border-radius:30px;
+    font-size:14px;
+    margin-bottom:20px;
+}
+
+.newsletter-box h2{
+    font-size:42px;
+    margin-bottom:18px;
+}
+
+.newsletter-box p{
+    color:#cbd5e1;
+    max-width:620px;
+    margin:auto;
+    line-height:1.8;
+}
+
+.newsletter form{
+    margin-top:40px;
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.newsletter input{
+    width:380px;
+    padding:16px 20px;
+    border:none;
+    border-radius:8px;
+    font-size:16px;
+}
+
+.newsletter button{
+    padding:16px 34px;
+    border:none;
+    border-radius:8px;
+    background:#2563eb;
+    color:#fff;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.newsletter button:hover{
+    background:#1d4ed8;
+}
+/* footer section */
+footer{
+    background-color: black;
+}
+.footer-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:25px 0px;
+}
+.footer-top, .footer-bottom{
+    color: white;
+}
+.footer-logo img{
+    width:170px;
+}
+
+.social-icons{
+    display:flex;
+    gap:15px;
+}
+.footer-bottom{
+    text-align: center;
+    padding: 20px 0;
+}
